@@ -1,0 +1,12 @@
+*** Variables ***
+${HEADER_CONTAINER}  css=#bs-example-navbar-collapse-1
+${NAVBAR_CONTAINER}  jquery=#navbar-menu
+${USER_NAV_LINK}  ${NAVBAR_CONTAINER} li span
+${MY_TRIBUTE_NAV_LINK}  ${NAVBAR_CONTAINER} a:eq(0)
+${LOGOUT_NAV_LINK}  ${NAVBAR_CONTAINER} a:eq(1)
+${HEADER_START_A_TRIBUTE_BTN}  css=#base-navbar-start-button
+@{MANAGE_HEADER_ELEMENT_LIST}
+...  ${USER_NAV_LINK}  ${MY_TRIBUTE_NAV_LINK}
+...  ${LOGOUT_NAV_LINK}  ${HEADER_START_A_TRIBUTE_BTN}
+
+${MANAGE_TRIBUTE_HEADER_LINK}  ${NAVBAR_CONTAINER} li:eq(0) a
