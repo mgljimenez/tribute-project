@@ -11,6 +11,19 @@ User Submit Customized Tribute
   User Should Be On Customized Your Tribute
   Click Element  ${CUSTOMIZED_CONTINUE_BUTTON}
 
+User SubmitS Customized Question
+  [Arguments]  ${p_questionOne}=${EMPTY}  ${p_questionTwo}=${EMPTY}
+  ${t_rString}=  Generate Random String  8  [LETTERS]
+  Wait Until Element Should Be Visible  ${QUESTION_ONE_DD}
+  Wait Until Element Should Be Visible  ${QUESTION_TWO_DD}
+  Select From List By Label  ${QUESTION_ONE_DD}  ${p_questionOne}
+  Select From List By Label  ${QUESTION_TWO_DD}  ${p_questionTwo}
+  Run Keyword If  '${p_questionOne}'!='${EMPTY}'
+  ...  Input Text  ${QUESTION_ONE_FIELD}  ${t_rString}
+  Run Keyword If  '${p_questionTwo}'!='${EMPTY}'
+  ...  Input Text  ${QUESTION_TWO_FIELD}  ${t_rString}
+  Click Element  ${CUSTOMIZED_CONTINUE_BUTTON}
+
 User Upgrades Created Tribute
   User Goes To Manage Tribute Page
   Wait Until Element Should Not Be Visible  ${INITIAL_LOADING}

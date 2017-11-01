@@ -2,6 +2,10 @@
 #--- CUSTOM A TRIBUTE FORM---#
 ${ADD_A_PHOTO_CONTAINER}  css=.profile-photo-default
 ${CUSTOMIZED_CONTINUE_BUTTON}  css=button.btn-primary
+${QUESTION_ONE_DD}  jquery=select.ember-view:eq(0)
+${QUESTION_ONE_FIELD}  jquery=input.optional-field:eq(0)
+${QUESTION_TWO_DD}  jquery=select.ember-view:eq(1)
+${QUESTION_TWO_FIELD}  jquery=input.optional-field:eq(1)
 
 # --- EMAIL INVITATION FORM---#
 ${EMAIL_ICON_INVITATION}  css=.fa-envelope-o
