@@ -23,6 +23,17 @@ User Changes Tribute Due Date
   Select One Month Schedule Date
   Wait And Click Element  ${SAVE_BUTTON}
 
+User Disables All Schedule Options
+  Import Resource File  home_page
+  User Goes To Manage Tribute Page
+  Wait And Click Element  ${MANAGE_SETTING_BUTTON}
+  Wait Until Element Should Not Be Visible  ${INITIAL_LOADING}
+  Wait Until Element Should Be Visible  ${SETTING_SCHEDULE_FORM}
+  :FOR  ${locator}  IN  @{SCHEDULE_CB_LOCATORS}
+  \  Focus  ${locator}
+  \  Unselect Checkbox  ${locator}
+  Wait And Click Element  ${SAVE_BUTTON}
+
 #--- Then ---#
 Success Modal Should Be Visible
   Wait Until Element Should Be Visible  ${UPDATED_SUCCESS_MODAL}

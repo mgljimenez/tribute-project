@@ -49,6 +49,15 @@ ${MANAGE_UPGRADE_LINK}  jquery=h3 > a img
 ${ADD_EDIT_PASSWORD_CB}  jquery=.ember-checkbox:eq(0)
 ${SETTING_PASSWORD_FIELD}  jquery=.field:eq(6) .field-input
 ${SAVE_BUTTON}  css=button.btn-primary
+#- schedule field -#
+${SETTING_SCHEDULE_FORM}  jquery=.field:last
+${SCHEUDLE_HALFWAY_CB}  ${SETTING_SCHEDULE_FORM} .ember-checkbox:eq(0)
+${SCHEDULE_DAY_BEFORE_CB}  ${SETTING_SCHEDULE_FORM} .ember-checkbox:eq(1)
+${SCHEDULE_DAY_OF_CB}  ${SETTING_SCHEDULE_FORM} .ember-checkbox:eq(2)
+${SCHEDULE_DAY_AFTER_CB}  ${SETTING_SCHEDULE_FORM} .ember-checkbox:eq(3)
+@{SCHEDULE_CB_LOCATORS}
+...  ${SCHEUDLE_HALFWAY_CB}  ${SCHEDULE_DAY_BEFORE_CB}
+...  ${SCHEDULE_DAY_OF_CB}  ${SCHEDULE_DAY_AFTER_CB}
 
 #--- TRIBUTE SUCCESS MODAL ---#
 ${UPDATED_SUCCESS_MODAL}  css=.showSweetAlert
