@@ -40,6 +40,18 @@ ${TIP_CONTAINER}  css=#help-make
 ${TIP_VIDEO}  css=#how-to-make-youtube
 ${INTERCOM_MESSENGER}  jquery=#intercom-container iframe:eq(0)
 
+#--- CHECKOUT SECTION ---#
+${CHECKOUT_SECTION}  jquery=#checkout-section
+${TRIBUTE_VIDEO_BOOK_ITEM}  jquery=.add-to-cart:eq(0)
+${BAMBOO_USB_ITEM}  jquery=.add-to-cart:eq(1)
+${TRIBUTE_DVD_ITEM}  jquery=.add-to-cart:eq(2)
+${TRIBUTE_VIDEO_CARD_ITEM}  jquery=.add-to-cart:eq(3)
+${HIGHLIGHT_REEL_ITEM}  css=a.contact-us
+@{ADD_TO_CART_ITEM_LOCATORS}
+...  ${TRIBUTE_VIDEO_BOOK_ITEM}  ${BAMBOO_USB_ITEM}
+...  ${TRIBUTE_DVD_ITEM}  ${TRIBUTE_VIDEO_CARD_ITEM}
+${REMOVE_CART_LOCATOR}  css=.remove-from-cart
+
 #--- SETTING FORM ---#
 ${MANAGE_SEND_FACEBOOK_MESSAGE_BTN}  jquery=.middle-stripe a:eq(0)
 ${MANAGE_COPY_LINK_BTN}  jquery=.middle-stripe a:eq(1)

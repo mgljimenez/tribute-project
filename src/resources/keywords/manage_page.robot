@@ -32,6 +32,17 @@ User Upgrades Created Tribute
   Click Element  ${PACKAGE_DIY_OPTION}
   Click Element  ${UPGRADE_BTN}
 
+User Purchases "${e_ITEM}" For Created Tribute
+  Focus  ${${e_ITEM}_ITEM}
+  Click Element  ${${e_ITEM}_ITEM}
+
+User Purchases Items For Created Tribute
+  User Goes To Manage Tribute Page
+  Wait Until Element Should Be Visible  ${CHECKOUT_SECTION}
+  :FOR  ${locator}  IN  @{ADD_TO_CART_ITEM_LOCATORS}
+  \  Focus  ${locator}
+  \  Click Element  ${locator}
+
 User Upgrades Created Guestbook Tribute To "${e_UPGRADE_TYPE}"
   Click Element  ${INVITE_MODAL_CLOSE_ICON}
   Wait Until Element Should Not Be Visible  ${INVITE_MODAL}
@@ -94,3 +105,7 @@ User Goes To Manage Tribute Page
 
 Invited Email Row Should Be Visible
   Wait Until Element Should Be Visible  ${LIST_OF_SUCCESSFUL_INVITE}
+
+User Should Successfully Purchased Items
+  ${t_count}=  Get Matching Locator Count  ${REMOVE_CART_LOCATOR}
+  Should Be Equal  '${t_count}'  '4'
