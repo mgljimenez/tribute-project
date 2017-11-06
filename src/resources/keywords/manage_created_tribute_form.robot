@@ -45,6 +45,9 @@ User Uploads Video Via Manage Tab
   ...  Element Should Be Visible  ${UPLOAD_SECTION_FINISH_BUTTON}
   Click Element  ${UPLOAD_SECTION_FINISH_BUTTON}
 
+User Purhcase Gift Item On Success Modal
+  User Should Sucessfully Uploaded Video
+  Click Element  ${UPLOAD_MODAL_PURCHASE_GIFT_ITEM}
 #--- Then ---#
 User Should Successfully Posted Live Tribute
   Wait Until Element Should Be Visible  ${INVITE_MODAL}

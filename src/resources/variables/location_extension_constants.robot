@@ -13,3 +13,4 @@ ${VIVEO_VIDEO_URL_EXT}  https://vimeo.com/67267924
 ${PRICING_URL_EXT}  /pricing/
 ${TERMS_OF_SERVICES_URL_EXT}  termsofservice
 ${PRIVACY_POLICY_URL_EXT}  privacy
+${PURCHASE_URL_EXT}  /purchase/

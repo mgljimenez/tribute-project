@@ -53,6 +53,7 @@ ${UPLOAD_VIDEO_LINK}  jquery=.ba-videorecorder-theme-modern-chooser-file:last
 ${CONFIRM_VIDEO_BUTTON}  jquery=.ba-videoplayer-theme-modern-rerecord-button:eq(0)
 ${REDO_VIDEO_BUTTON}    jquery=.ba-videoplayer-theme-modern-rerecord-button:eq(1)
 ${SUCCESS_UPLOADED_MODAL}  jquery=.modal-body.step-6
+${UPLOAD_MODAL_PURCHASE_GIFT_ITEM}  css=.related-link-image
 
 #--- CHECKOUT SECTION ---#
 ${CHECKOUT_SECTION}  jquery=#checkout-section
