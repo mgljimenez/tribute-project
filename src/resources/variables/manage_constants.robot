@@ -67,9 +67,11 @@ ${HIGHLIGHT_REEL_ITEM}  css=a.contact-us
 ${REMOVE_CART_LOCATOR}  css=.remove-from-cart
 
 #--- SETTING FORM ---#
+${MANAGE_TRIBUTE_HERO}  jquery=.tribute-hero
 ${MANAGE_SEND_FACEBOOK_MESSAGE_BTN}  jquery=.middle-stripe a:eq(0)
 ${MANAGE_COPY_LINK_BTN}  jquery=.middle-stripe a:eq(1)
 ${MANAGE_SETTING_FORM}  css=section#manage-info
+${MANAGE_RECORD_UPLOAD_VIDEOS_BUTTON}  jquery=section#manage-index a:eq(3) div
 ${MANAGE_SETTING_BUTTON}  jquery=section#manage-index a:eq(4) div
 ${MANAGE_UPGRADE_LINK}  jquery=h3 > a img
 ${ADD_EDIT_PASSWORD_CB}  jquery=.ember-checkbox:eq(0)
@@ -101,3 +103,13 @@ ${UPGRADE_BTN}  css=#upgrade-button
 ${SHARE_MODAL}  css=#share-modal .modal-body
 ${SHARE_MODAL_COPY_LINK_BTN}  jquery=.share-modal-icon:eq(0)
 ${SHARE_MODAL_SUCCESS_MESSAGE}  css=.sweet-alert.visible
+
+#--- RECORD / UPLOAD VIDEO SECTION ---#
+${RECORD_UPLOAD_VIDEO_SECTION}  jquery=#record-upload
+${RECORD_YOUR_VIDEO_ICON}  ${RECORD_UPLOAD_VIDEO_SECTION} .members-icon:EQ(0)
+${UPLOAD_VIDEO_TRIBUTE_MEMBER_ICON}  ${RECORD_UPLOAD_VIDEO_SECTION} .members-icon:EQ(1)
+${UPLOAD_VIDEO_CONAINER}  ${RECORD_UPLOAD_VIDEO_SECTION} .container
+${UPLOAD_SECTION_NAME_FIELD}  ${UPLOAD_VIDEO_CONAINER} .ember-text-field:eq(0)
+${UPLOAD_SECTION_EMAIL_FIELD}  ${UPLOAD_VIDEO_CONAINER} .ember-text-field:eq(1)
+${UPLOAD_SECTION_UPLOAD_VIDEO_BTN}  ${UPLOAD_VIDEO_CONAINER} input[data-selector="file-input-opt2"]
+${UPLOAD_SECTION_FINISH_BUTTON}  ${UPLOAD_VIDEO_CONAINER} .btn-primary

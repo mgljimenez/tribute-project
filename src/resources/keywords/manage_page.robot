@@ -69,6 +69,9 @@ User Copies URL On Manage Tribute
   Wait Until Element Should Be Visible  ${SHARE_MODAL}
   Click Element  ${SHARE_MODAL_COPY_LINK_BTN}
 
+User Should Successfully Uploaded Video On Manage Tribute
+  Wait Until Element Should Be Visible  ${MANAGE_TRIBUTE_HERO}
+
 #--- Then ---#
 User Should Successfully Logs In
   "MANAGE_HEADER" Element List Should Be Visible

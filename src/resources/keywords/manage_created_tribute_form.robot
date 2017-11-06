@@ -18,14 +18,32 @@ User Uploads "${e_UPLOAD_FILE}" Via "${e_MEDIUM}"
   ...  AND  Input Text  ${UPLOAD_NAME_FIELD}  ${t_rString}
   ...  AND  Input Text  ${UPLOAD_EMAIL_FIELD}  ${TRIBUTE_ACCOUNT}
   ...  AND  Click Element  ${UPLOAD_NEXT_BUTTON}
-  ...  ELSE  Run Keywords
+  ...  ELSE IF  '${e_MEDIUM}'=='Facebook'  Run Keywords
   ...  Login Via "Facebook"
   ...  AND  Wait And Click Element  ${INVITE_MODAL_CLOSE_ICON}
   ...  AND  Wait Until Element Should Not Be Visible  ${INVITE_MODAL}
-  Wait Until Keyword Succeeds  30 s  15 s
-  ...  Element Should Be Visible  ${VIDEO_UPLOAD_CONTAINER}
+  Wait Until Element Should Be Visible   ${VIDEO_UPLOAD_CONTAINER}
   Upload File  ${UPLOAD_VIDEO_LINK}  sampleVideo.mp4
-  Wait And Click Element  ${CONFIRM_VIDEO_BUTTON}
+  Wait Until Keyword Succeeds  30 s  10 s
+  ...  Element Should Be Visible  ${CONFIRM_VIDEO_BUTTON}
+  Click Element  ${CONFIRM_VIDEO_BUTTON}
+
+User Uploads Video Via Manage Tab
+  ${t_rString}=  Generate Random String  8  [LETTERS]
+  User Goes To Manage Tribute Page
+  Wait Until Element Should Not Be Visible  ${INITIAL_LOADING}
+  Set Selenium Speed  0.5 s
+  Wait And Click Element  ${MANAGE_RECORD_UPLOAD_VIDEOS_BUTTON}
+  Wait And Click Element  ${UPLOAD_VIDEO_TRIBUTE_MEMBER_ICON}
+  Wait Until Element Should Be Visible  ${UPLOAD_VIDEO_CONAINER}
+  # Select From List By Label  ${}  ${}
+  Input Text  ${UPLOAD_SECTION_NAME_FIELD}  ${t_rString}
+  Input Text  ${UPLOAD_SECTION_EMAIL_FIELD}  ${TRIBUTE_ACCOUNT}
+  Set Selenium Speed  0 s
+  Upload File  ${UPLOAD_SECTION_UPLOAD_VIDEO_BTN}  sampleVideo.mp4
+  Wait Until Keyword Succeeds  30 s  10 s
+  ...  Element Should Be Visible  ${UPLOAD_SECTION_FINISH_BUTTON}
+  Click Element  ${UPLOAD_SECTION_FINISH_BUTTON}
 
 #--- Then ---#
 User Should Successfully Posted Live Tribute
