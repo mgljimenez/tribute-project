@@ -30,6 +30,7 @@ ${REMINDER_SENT_TABLE}  css=table#reminders-sent
 ${TRIBUTE_TIMER}  css=.bg-success
 ${TIP_FIGURE}  jquery=figure:eq(0)
 ${HELP_FIGURE}  jquery=figure:eq(1)
+${RECORD_BUTTON}  jquery=#record-button
 #- tribute live modal -#
 ${INVITE_MODAL}  css=#invite-modal .modal-body
 ${INVITE_MODAL_CLOSE_ICON}  ${INVITE_MODAL} .close
@@ -39,6 +40,19 @@ ${UPGRADE_SERVICE}  css=.text-center > a img
 ${TIP_CONTAINER}  css=#help-make
 ${TIP_VIDEO}  css=#how-to-make-youtube
 ${INTERCOM_MESSENGER}  jquery=#intercom-container iframe:eq(0)
+#- Upload Modal -#
+${UPLOAD_MODAL}   jquery=#recording-modal2 .modal-content
+${UPLOAD_VIA_FACEBOOK}  ${UPLOAD_MODAL} #login-continue-with-facebook
+${UPLOAD_VIA_EMAIL}  ${UPLOAD_MODAL} #button-email
+${EMAIL_FORM}  jquery=#check_email_form
+${UPLOAD_NAME_FIELD}  jquery=#record-modal-email-name
+${UPLOAD_EMAIL_FIELD}  jquery=#record-modal-email-email
+${UPLOAD_NEXT_BUTTON}  jquery=.record-modal-action-buttons.step-2
+${VIDEO_UPLOAD_CONTAINER}  jquery=#ziggeorecord
+${UPLOAD_VIDEO_LINK}  jquery=.ba-videorecorder-theme-modern-chooser-file:last
+${CONFIRM_VIDEO_BUTTON}  jquery=.ba-videoplayer-theme-modern-rerecord-button:eq(0)
+${REDO_VIDEO_BUTTON}    jquery=.ba-videoplayer-theme-modern-rerecord-button:eq(1)
+${SUCCESS_UPLOADED_MODAL}  jquery=.modal-body.step-6
 
 #--- CHECKOUT SECTION ---#
 ${CHECKOUT_SECTION}  jquery=#checkout-section

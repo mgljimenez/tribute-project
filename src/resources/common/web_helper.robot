@@ -40,6 +40,11 @@ Wait Until Element Should Contain
   Wait Until Keyword Succeeds  ${TIMEOUT}  ${INTERVAL}
   ...  Element Should Contain  ${p_element}  ${p_text}
 
+Upload File
+  [Arguments]  ${p_locator}  ${p_fileName}
+  ${t_path}=  Normalize Path  ${CURDIR}${/}..${/}testdata${/}${p_fileName}
+  Choose File  ${p_locator}  ${t_path}
+
 #=====================#
 #  INTERNAL KEYWORDS  #
 #=====================#
