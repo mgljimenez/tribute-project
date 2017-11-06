@@ -2,7 +2,7 @@
 Documentation  This test suite will test posting
 ...  of DIY tribute until posting of video via facebook
 Force Tags  smoke
-Default Tags  UploadVideoViaFBTest
+Default Tags  UploadVideoViaFBTest  upload
 Suite Setup  User Has Successfully Logged In
 Suite Teardown  Close All Browsers
 Resource  ../../resources/common/global_setup.robot

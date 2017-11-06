@@ -2,7 +2,7 @@
 Documentation  This test suite will test posting of DIY
 ...  tribute until posting of video via manage tab
 Force Tags  smoke
-Default Tags  UploadVideoViaManageTest
+Default Tags  UploadVideoViaManageTest  upload
 Suite Setup  User Has Successfully Logged In
 Suite Teardown  Close All Browsers
 Resource  ../../resources/common/global_setup.robot
