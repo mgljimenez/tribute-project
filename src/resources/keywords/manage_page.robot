@@ -32,6 +32,12 @@ User Upgrades Created Tribute
   Click Element  ${PACKAGE_DIY_OPTION}
   Click Element  ${UPGRADE_BTN}
 
+User Goes To FAQ Page
+  User Goes To Manage Tribute Page
+  Wait Until Element Should Not Be Visible  ${INITIAL_LOADING}
+  Click Element  ${MANAGE_FAQ_BUTTON}
+  Select Window  new
+
 User Invites User Via Upload CSV
   User Goes To Manage Tribute Page
   Wait Until Element Should Not Be Visible  ${INITIAL_LOADING}

@@ -82,6 +82,7 @@ ${MANAGE_COPY_LINK_BTN}  jquery=.middle-stripe a:eq(1)
 ${MANAGE_SETTING_FORM}  css=section#manage-info
 ${MANAGE_RECORD_UPLOAD_VIDEOS_BUTTON}  jquery=section#manage-index a:eq(3) div
 ${MANAGE_SETTING_BUTTON}  jquery=section#manage-index a:eq(4) div
+${MANAGE_FAQ_BUTTON}  jquery=section#manage-index a:eq(5) div
 ${MANAGE_UPGRADE_LINK}  jquery=h3 > a img
 ${ADD_EDIT_PASSWORD_CB}  jquery=.ember-checkbox:eq(0)
 ${SETTING_PASSWORD_FIELD}  jquery=.field:eq(6) .field-input
