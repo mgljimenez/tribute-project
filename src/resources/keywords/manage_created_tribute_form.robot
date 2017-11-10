@@ -24,7 +24,7 @@ User Uploads "${e_UPLOAD_FILE}" Via "${e_MEDIUM}"
   ...  AND  Wait Until Element Should Not Be Visible  ${INVITE_MODAL}
   Wait Until Element Should Be Visible   ${VIDEO_UPLOAD_CONTAINER}
   Upload File  ${UPLOAD_VIDEO_LINK}  sampleVideo.mp4
-  Wait Until Keyword Succeeds  30 s  10 s
+  Wait Until Keyword Succeeds  50 s  10 s
   ...  Element Should Be Visible  ${CONFIRM_VIDEO_BUTTON}
   Click Element  ${CONFIRM_VIDEO_BUTTON}
 
