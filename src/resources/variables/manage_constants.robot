@@ -67,7 +67,16 @@ ${CONFIRM_VIDEO_BUTTON}  jquery=.ba-videoplayer-theme-modern-rerecord-button:eq(
 ${REDO_VIDEO_BUTTON}    jquery=.ba-videoplayer-theme-modern-rerecord-button:eq(1)
 ${SUCCESS_UPLOADED_MODAL}  jquery=.modal-body.step-6
 ${UPLOAD_MODAL_PURCHASE_GIFT_ITEM}  css=.related-link-image
-
+${UPLOAD_PHOTOS_BTN}  css=.record-modal-upload-photos-button span
+${UPLOADED_PHOTO_THUMBNAIL}  jquery=.list-uploaded-thumbnail
+#- upload multiple photo -#
+${UPLOAD_MULTIPLE_PHOTO}  jquery=.uploadcare-dialog-panel
+${CHOOSE_A_LOCAL_FILE_BUTTON}  css=.uploadcare-dialog-big-button
+${CHOOSE_FILE_CONTAINER}  ${UPLOAD_MULTIPLE_PHOTO} input:eq(0)
+${UPLOAD_A_FILE_VIA_URL}  jquery=.uploadcare-dialog-tab-url
+${UPLOAD_URL_FIELD}  jquery=input.uploadcare-dialog-input
+${UPLOAD_PHOTO_URL_BTN}  jquery=button.uploadcare-dialog-url-submit
+${UPLOAD_PHOTO_DONE_BTN}  jquery=.uploadcare-dialog-source-base-done
 #--- CHECKOUT SECTION ---#
 ${CHECKOUT_SECTION}  jquery=#checkout-section
 ${TRIBUTE_VIDEO_BOOK_ITEM}  jquery=.add-to-cart:eq(0)

@@ -28,6 +28,16 @@ User Uploads "${e_UPLOAD_FILE}" Via "${e_MEDIUM}"
   ...  Element Should Be Visible  ${CONFIRM_VIDEO_BUTTON}
   Click Element  ${CONFIRM_VIDEO_BUTTON}
 
+User Uploads Photo On Success Modal
+  Set Selenium Speed  0.5 s
+  Wait And Click Element  ${UPLOAD_PHOTOS_BTN}
+  Wait And Click Element  ${UPLOAD_A_FILE_VIA_URL}
+  Wait Until Element Should Be Visible  ${UPLOAD_URL_FIELD}
+  Input Text  ${UPLOAD_URL_FIELD}  ${URL_PHOTO_PATH}
+  Click Element  ${UPLOAD_PHOTO_URL_BTN}
+  Click Element  ${UPLOAD_PHOTO_DONE_BTN}
+  Set Selenium Speed  0 s
+
 User Uploads Video Via Manage Tab
   ${t_rString}=  Generate Random String  8  [LETTERS]
   User Goes To Manage Tribute Page
@@ -62,3 +72,7 @@ Tip Section Should Be Visible
 
 User Should Sucessfully Uploaded Video
   Wait Until Element Should Be Visible  ${SUCCESS_UPLOADED_MODAL}
+
+Upload Photo Should Be Visible On Modal
+  Wait Until Element Should Be Visible  ${UPLOADED_PHOTO_THUMBNAIL}
+
