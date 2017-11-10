@@ -32,6 +32,11 @@ User Upgrades Created Tribute
   Click Element  ${PACKAGE_DIY_OPTION}
   Click Element  ${UPGRADE_BTN}
 
+User Invites User Via Upload CSV
+  User Goes To Manage Tribute Page
+  Wait Until Element Should Not Be Visible  ${INITIAL_LOADING}
+  Click Element  ${MANAGE_UPGRADE_LINK}
+
 User Purchases "${e_ITEM}" For Created Tribute
   Focus  ${${e_ITEM}_ITEM}
   Click Element  ${${e_ITEM}_ITEM}

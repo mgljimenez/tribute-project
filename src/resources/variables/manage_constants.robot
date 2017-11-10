@@ -15,6 +15,8 @@ ${MANUAL_ENTER_CONTACT_LINK}  jquery=.invited-users-related-links a:eq(0)
 ${INVITATION_SENT_EMAIL_LINK}  jquery=.invited-users-related-links a:eq(1)
 ${UPLOAD_CSV_LINK}  jquery=.invited-users-related-links a:eq(2)
 ${INSTRUCTION_TO_UPLOAD_CSV_MODAL}  css=.invited-users-csv-instructions-modal .modal-content
+${LIST_OF_INVITES}  jquery=.invitation-import-invites-container
+${LIST_OF_INVITED}  jquery=.invited-users-row-container
 #- manual invite form -#
 ${MANUAL_INVITE_FORM}  css=form.invite-member
 ${MANUAL_NAME_FIELD}  css=input#name-input
@@ -25,7 +27,13 @@ ${INVITED_EMAIL}  css=.invited-users-email
 ${LIST_OF_SUCCESSFUL_INVITE}  css=.invited-users-row
 #- reminder sent form -#
 ${REMINDER_SENT_TABLE}  css=table#reminders-sent
-
+#--- cloudsponge-widget ---#
+${CLOUD_SPONGE_WIDGET}  jquery=.cloudsponge-widget
+${GENERATE_CSV_WIDGET_BTN}  ${CLOUD_SPONGE_WIDGET} li[data-launcher="csv"]
+${CSV_UPLOAD_CONTAINER}  jquery=.cloudsponge-file-upload
+${CSV_UPLOAD}  ${CSV_UPLOAD_CONTAINER} + input
+${SELECT_ALL_CONTACT}  css=a#cloudsponge-select-all
+${GET_CONTACTS_BUTTON}  css=a#cloudsponge-export-button
 #--- CREATED TRIBUTE ---#
 ${TRIBUTE_TIMER}  css=.bg-success
 ${TIP_FIGURE}  jquery=figure:eq(0)
