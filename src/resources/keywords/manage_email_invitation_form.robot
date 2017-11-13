@@ -45,7 +45,25 @@ User Views Instruction To Upload Contacts
   Wait Until Element Should Be Visible  ${DONE_INVITATION_LINK}
   Click Element  ${UPLOAD_CSV_LINK}
 
+User Deletes Invited Email
+  Wait Until Element Should Be Visible
+  ...  ${LIST_OF_INVITED}
+  Click Element  ${INVITED_ACTION_ICON}
+  Wait And Click Element  ${INVITE_REMOVE_ICON}
+  Wait Until Element Should Be Visible
+  ...  ${REMOVE_INVITED_MODAL}
+  Click Element  ${REMOVE_YES_BUTTON}
+
+User Completes Sending Of Manual Invitation
+  User Sends Manual Invitation
+  Wait And Click Element  ${DONE_INVITATION_LINK}
 #--- THEN ---#
 Invited User On CSV FIle Should Be Visible
   Wait Until Element Should Be Visible
+  ...  ${LIST_OF_INVITED}
+
+User Should Successfully Removed Invited Email
+  Wait Until Element Should Not Be Visible
+  ...  ${REMOVE_INVITED_MODAL}
+  Wait Until Element Should Not Be Visible
   ...  ${LIST_OF_INVITED}

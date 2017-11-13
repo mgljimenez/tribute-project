@@ -1,8 +1,8 @@
 *** Settings ***
-Documentation  This test suite will cover
-...  testing of manual email invite
+Documentation  This test suite will cover testing of
+...  manual email invite up to deleting it.
 Force Tags  smoke
-Default Tags  InviteManualTributeTest
+Default Tags  DeleteInvitedTributeTest
 Suite Setup  User Has Successfully Logged In
 Suite Teardown  Close All Browsers
 Resource  ../../resources/common/global_setup.robot
@@ -20,3 +20,8 @@ User Has Successfully Manual Invited Contacts Via Email
   And User Submit Customized Tribute
   And User Sends Manual Invitation
   Then Invited Email Row Should Be Visible
+
+User Has Successfully Deleted Invited Contact Via Email
+  Given User Is In "EMAIL_INVITATION" Page
+  When User Deletes Invited Email
+  Then User Should Successfully Removed Invited Email

@@ -17,6 +17,11 @@ ${UPLOAD_CSV_LINK}  jquery=.invited-users-related-links a:eq(2)
 ${INSTRUCTION_TO_UPLOAD_CSV_MODAL}  css=.invited-users-csv-instructions-modal .modal-content
 ${LIST_OF_INVITES}  jquery=.invitation-import-invites-container
 ${LIST_OF_INVITED}  jquery=.invited-users-row-container
+${INVITED_ACTION_ICON}  ${LIST_OF_INVITED} .invited-users-actions
+${INVITE_REMOVE_ICON}  ${INVITED_ACTION_ICON} .remove
+#- remove invited modal -#
+${REMOVE_INVITED_MODAL}  jquery=.showSweetAlert
+${REMOVE_YES_BUTTON}  ${REMOVE_INVITED_MODAL} button.confirm
 #- manual invite form -#
 ${MANUAL_INVITE_FORM}  css=form.invite-member
 ${MANUAL_NAME_FIELD}  css=input#name-input
@@ -80,6 +85,7 @@ ${MANAGE_TRIBUTE_HERO}  jquery=.tribute-hero
 ${MANAGE_SEND_FACEBOOK_MESSAGE_BTN}  jquery=.middle-stripe a:eq(0)
 ${MANAGE_COPY_LINK_BTN}  jquery=.middle-stripe a:eq(1)
 ${MANAGE_SETTING_FORM}  css=section#manage-info
+${MANAGE_SEND_REMINDER_BUTTON}  jquery=section#manage-index a:eq(2) div
 ${MANAGE_RECORD_UPLOAD_VIDEOS_BUTTON}  jquery=section#manage-index a:eq(3) div
 ${MANAGE_SETTING_BUTTON}  jquery=section#manage-index a:eq(4) div
 ${MANAGE_FAQ_BUTTON}  jquery=section#manage-index a:eq(5) div
@@ -123,3 +129,13 @@ ${UPLOAD_SECTION_NAME_FIELD}  ${UPLOAD_VIDEO_CONAINER} .ember-text-field:eq(0)
 ${UPLOAD_SECTION_EMAIL_FIELD}  ${UPLOAD_VIDEO_CONAINER} .ember-text-field:eq(1)
 ${UPLOAD_SECTION_UPLOAD_VIDEO_BTN}  ${UPLOAD_VIDEO_CONAINER} input[data-selector="file-input-opt2"]
 ${UPLOAD_SECTION_FINISH_BUTTON}  ${UPLOAD_VIDEO_CONAINER} .btn-primary
+
+#---- SEND REMINDER SECTION ---#
+${SEND_REMINDER_SECTION}  jquery=#send-reminders
+${SELECT_ALL_EMAILS_LISTED}  ${SEND_REMINDER_SECTION} .sorting-menu li:eq(0)
+${COMPOSE_MESSAGE_BUTTON}  ${SEND_REMINDER_SECTION} button.btn-primary
+${SEND_REMINDERS_BUTTON}  jquery=button#send-reminders-send-button
+#- send reminder modal -#
+${SEND_REMINDER_MODAL}  jquery=.showSweetAlert
+${SEND_REMINDER_YES_BTN}  ${SEND_REMINDER_MODAL} .confirm
+${SEND_REMINDER_SUCCESS}  ${SEND_REMINDER_MODAL} .sa-success

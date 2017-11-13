@@ -15,3 +15,4 @@ ${TERMS_OF_SERVICES_URL_EXT}  termsofservice
 ${PRIVACY_POLICY_URL_EXT}  privacy
 ${PURCHASE_URL_EXT}  /purchase/
 ${ZENDESK_URL_EXT}  tribute.zendesk.com
+${EMAIL_INVITATION_URL_EXT}  /invitations/email
