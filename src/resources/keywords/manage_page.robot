@@ -81,19 +81,19 @@ User Copies URL On Manage Tribute
   Click Element  ${SHARE_MODAL_COPY_LINK_BTN}
 
 User Sends Reminders To Invited Emails
+  Set Selenium Speed  0.5 s
   Wait And Click Element  ${MANAGE_TRIBUTE_HEADER_LINK}
   Wait Until Element Should Not Be Visible  ${INITIAL_LOADING}
   Wait And Click Element  ${MANAGE_SEND_REMINDER_BUTTON}
   Wait Until Element Should Be Visible
   ...  ${SEND_REMINDER_SECTION}
-  Set Selenium Speed  0.5 s
   Click Element  ${SELECT_ALL_EMAILS_LISTED}
   Click Element  ${COMPOSE_MESSAGE_BUTTON}
   Wait And Click Element  ${SEND_REMINDERS_BUTTON}
-  Set Selenium Speed  0 s
   Wait Until Element Should Be Visible
   ...  ${SEND_REMINDER_MODAL}
   Click Element  ${SEND_REMINDER_YES_BTN}
+  Set Selenium Speed  0 s
 
 #--- Then ---#
 Send Reminder Success Modal Should Be Visible

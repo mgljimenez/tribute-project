@@ -46,6 +46,7 @@ User Views Instruction To Upload Contacts
   Click Element  ${UPLOAD_CSV_LINK}
 
 User Deletes Invited Email
+  Set Selenium Speed  0.5 s
   Wait Until Element Should Be Visible
   ...  ${LIST_OF_INVITED}
   Click Element  ${INVITED_ACTION_ICON}
@@ -53,6 +54,7 @@ User Deletes Invited Email
   Wait Until Element Should Be Visible
   ...  ${REMOVE_INVITED_MODAL}
   Click Element  ${REMOVE_YES_BUTTON}
+  Set Selenium Speed  0 s
 
 User Completes Sending Of Manual Invitation
   User Sends Manual Invitation
