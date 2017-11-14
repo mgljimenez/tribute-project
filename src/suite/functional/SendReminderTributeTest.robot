@@ -25,4 +25,3 @@ User Has Sucessfully Sent Reminder To Invited Emails
   Given User Is In "CREATED_TRIBUTE" Page
   When User Sends Reminders To Invited Emails
   Then Send Reminder Success Modal Should Be Visible
-

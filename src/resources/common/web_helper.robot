@@ -1,5 +1,6 @@
 *** Settings ***
 Library  Selenium2Library
+Resource  setup_teardown.robot
 Resource  launcher.robot
 Resource  web_helper_constants.robot
 Resource  ../variables/location_extension_constants.robot
