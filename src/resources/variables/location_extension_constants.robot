@@ -17,3 +17,4 @@ ${PURCHASE_URL_EXT}  /purchase/
 ${ZENDESK_URL_EXT}  tribute.zendesk.com
 ${EMAIL_INVITATION_URL_EXT}  /invitations/email
 ${TEST_FOR_RENDER_JOBS_URL_EXT}  test-for-render-jobs/
+${TWITTER_LOGIN_URL_EXT}  twitter.com/login

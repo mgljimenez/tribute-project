@@ -8,3 +8,5 @@ ${TRIBUTE_PASSWORD}  tribute13
 # ${FACEBOOK_ACCOUNT}  robottribute@gmail.com
 ${FACEBOOK_ACCOUNT}  marcoqatest@gmail.com
 ${FACEBOOK_PASSWORD}  13luckys
+${TWITTER_ACCOUNT}  robot_tribute
+${TWITTER_PASSWORD}  robottribute13
