@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation  This test will cover completing
 ...  tribute share via twitter
-Force Tags  smoke
+Force Tags  smoke  completeshare
 Default Tags  CompleteTributeShareViaTwitter
 Suite Setup  Launch Tribute Website  ${TEST_FOR_RENDER_JOBS_URL_EXT}
 Suite Teardown  Close All Browsers

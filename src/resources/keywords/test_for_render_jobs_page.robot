@@ -19,6 +19,9 @@ User Should Successfully Posted Tribute On Twitter
   Element Should Contain
   ...  ${FIRST_STREAM_ITEM}  ${s_RANDOM_STRING}
 
+User Should Successfully See Personal Email Client Modal
+  Wait Until Element Should Be Visible
+  ...  ${PEROSONAL_EMAIL_CLIENT_MODAL}
 #--- INTERNAL KEYWORDS ---#
 Complete Facebook Share
   Import Resource File  sign_in_page
@@ -42,6 +45,9 @@ Complete Twitter Share
   Input Text  ${TWITTER_POST_TEXTAREA}  ${t_newText}
   Click Element  ${TWITTER_TWEET_BUTTON}
   Set Suite Variable  ${s_RANDOM_STRING}  ${t_randomString}
+
+Complete Email Share
+  User Should Successfully See Personal Email Client Modal
 
 #--- Teardown ---#
 Delete Robot Twitter Post
