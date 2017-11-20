@@ -9,6 +9,9 @@ User Completes Share Tribute Via "${e_BUTTON_NAME}"
   Click Element  ${${e_BUTTON_NAME}_SHARE}
   Run Keyword  Complete ${e_BUTTON_NAME} Share
 
+User Goes To Purhcase Page via Completed Tribute Page
+   Wait And Click Element  ${TRIBUTE_GIFT_CONTAINER}
+
 #--- Then ---#
 User Should Successfully Posted Tribute On Facebook
   User Is In "TEST_FOR_RENDER_JOBS" Page
