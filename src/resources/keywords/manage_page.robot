@@ -95,6 +95,18 @@ User Sends Reminders To Invited Emails
   Click Element  ${SEND_REMINDER_YES_BTN}
   Set Selenium Speed  0 s
 
+User Sends Reminder From Personal Email
+  Set Selenium Speed  0.5 s
+  Wait And Click Element  ${MANAGE_TRIBUTE_HEADER_LINK}
+  Wait Until Element Should Not Be Visible  ${INITIAL_LOADING}
+  Wait And Click Element  ${MANAGE_SEND_REMINDER_BUTTON}
+  Wait Until Element Should Be Visible
+  ...  ${SEND_REMINDER_SECTION}
+  Click Element  ${SELECT_ALL_EMAILS_LISTED}
+  Click Element  ${COMPOSE_MESSAGE_BUTTON}
+  Wait And Click Element  ${SEND_FROM_PERSONAL_EMAIL_CB}
+  Click Element  ${SEND_REMINDERS_BUTTON}
+
 #--- Then ---#
 Send Reminder Success Modal Should Be Visible
   Wait Until Element Should Be Visible
@@ -126,6 +138,10 @@ Reminder Sent Table Should Be Visible
 Instruction To Upload CSV Modal Should Be Visible
   Wait Until Element Should Be Visible  ${INSTRUCTION_TO_UPLOAD_CSV_MODAL}
 
+Send From Email Modal Should Be Visible
+  Import Resource File  test_for_render_jobs_page
+  Wait Until Element Should Be Visible
+  ...  ${SEND_MAIL_FROM_MODAL}
 #--- Internal Keyword ---#
 User Should Be On Customized Your Tribute
   Wait Until Element Should Be Visible  ${ADD_A_PHOTO_CONTAINER}

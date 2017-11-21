@@ -133,6 +133,7 @@ ${UPLOAD_SECTION_FINISH_BUTTON}  ${UPLOAD_VIDEO_CONAINER} .btn-primary
 #---- SEND REMINDER SECTION ---#
 ${SEND_REMINDER_SECTION}  jquery=#send-reminders
 ${SELECT_ALL_EMAILS_LISTED}  ${SEND_REMINDER_SECTION} .sorting-menu li:eq(0)
+${SEND_FROM_PERSONAL_EMAIL_CB}  jquery=.more-options .ember-checkbox:eq(1)
 ${COMPOSE_MESSAGE_BUTTON}  ${SEND_REMINDER_SECTION} button.btn-primary
 ${SEND_REMINDERS_BUTTON}  jquery=button#send-reminders-send-button
 #- send reminder modal -#
