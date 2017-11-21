@@ -18,3 +18,5 @@ ${ZENDESK_URL_EXT}  tribute.zendesk.com
 ${EMAIL_INVITATION_URL_EXT}  /invitations/email
 ${TEST_FOR_RENDER_JOBS_URL_EXT}  test-for-render-jobs/
 ${TWITTER_LOGIN_URL_EXT}  twitter.com/login
+${URL_PHOTO_PATH}  https://scontent.fmnl3-1.fna.fbcdn.net/v/t1.0-9/22281951_120901098664595_7400872145915832766_n.jpg?oh=d1b367499b64497ed9e6659dbe950ab4&oe=5A9493FF
+${TEST302_URL_EXT}  /test302

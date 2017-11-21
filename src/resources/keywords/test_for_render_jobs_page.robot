@@ -12,6 +12,12 @@ User Completes Share Tribute Via "${e_BUTTON_NAME}"
 User Goes To Purhcase Page via Completed Tribute Page
    Wait And Click Element  ${TRIBUTE_GIFT_CONTAINER}
 
+User Sends Email To Receipient
+  Click Element  ${EMAIL_SHARE}
+  Wait Until Element Should Be Visible
+  ...  ${SEND_MAIL_FROM_MODAL}
+  Click Element  ${SEND_MAIL_SUCCESS_BTN}
+
 #--- Then ---#
 User Should Successfully Posted Tribute On Facebook
   User Is In "TEST_FOR_RENDER_JOBS" Page
@@ -25,6 +31,12 @@ User Should Successfully Posted Tribute On Twitter
 User Should Successfully See Personal Email Client Modal
   Wait Until Element Should Be Visible
   ...  ${PEROSONAL_EMAIL_CLIENT_MODAL}
+
+User Should Be Able To Send Email To Recipient
+  Wait Until Element Should Not Be Visible
+  ...  ${SEND_MAIL_FROM_MODAL}
+  User Should Successfully See Personal Email Client Modal
+
 #--- INTERNAL KEYWORDS ---#
 Complete Facebook Share
   Import Resource File  sign_in_page
