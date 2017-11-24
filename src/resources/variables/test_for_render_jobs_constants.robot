@@ -3,10 +3,15 @@ ${SHARE_WITH}  jquery=.tribute-share
 ${FACEBOOK_SHARE}  ${SHARE_WITH} .share-option:eq(1)
 ${TWITTER_SHARE}  ${SHARE_WITH} .share-option:eq(2)
 ${EMAIL_SHARE}  ${SHARE_WITH} .share-option:eq(3)
+${DOWNLOAD_BUTTON}  jquery=a.download-button
 ${TRIBUTE_GIFT_CONTAINER}  css=body > main > div.container > div:nth-child(2) > div > div > div > a > div.col-xs-12.col-sm-12.col-md-6.col-lg-5.text-center > div:nth-child(1) > h3
 ${PEROSONAL_EMAIL_CLIENT_MODAL}  css=.showSweetAlert
 ${SEND_MAIL_FROM_MODAL}  jquery=form#send-mail-from-modal
 ${SEND_MAIL_SUCCESS_BTN}  ${SEND_MAIL_FROM_MODAL} button.btn-success
+@{COMPLETED_TRIBUTE_ELEMENT_LIST}
+...  ${FACEBOOK_SHARE}  ${TWITTER_SHARE}
+...  ${TWITTER_SHARE}  ${DOWNLOAD_BUTTON}
+...  ${TRIBUTE_GIFT_CONTAINER}
 #--- facebook elements ---#
 ${POST_TO_FACEBOOK_BUTTON}  css=button[name="__CONFIRM__"]
 #--- twitter elements ---#
