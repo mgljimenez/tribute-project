@@ -118,6 +118,20 @@ User Views Video On Send Reminder Page
   Wait And Click Element  ${MANAGE_SEND_REMINDER_BUTTON}
   Wait AndClick Element  ${SEND_REMINDER_VIDEO_LINK}
 
+User Add Video On Video Editor
+  Wait And Click Element  ${MANAGE_HERO_VIDEOS_LINK}
+  Wait Until Element Should Be Visible
+  ...  ${MANAGE_EDIT_CONTAINER}
+  Wait Until Keyword Succeeds  120 s  30 s
+  ...  Element Should Be Visible  ${EDITOR_ADD_MEDIA}
+  Click Element  ${EDITOR_ADD_MEDIA}
+  Wait And Click Element  ${EDITOR_VIDEO_SUB_VIDEO}
+  ${t_videoCount}=  Get Matching Locator Count  ${UPLOADED_VIDEO_CANVAS}
+  Wait Until Element Should Be Visible
+  ...  ${EDITOR_UPLOAD_CONTAINER}
+  Upload File  ${EDITOR_UPLOAD_BUTTON}  sampleVideo.mp4
+  Set Suite Variable  ${s_VIDEO_COUNT}  ${t_videoCount}
+
 #--- Then ---#
 Send Reminder Success Modal Should Be Visible
   Wait Until Element Should Be Visible
@@ -173,3 +187,10 @@ Invited Email Row Should Be Visible
 User Should Successfully Purchased Items
   ${t_count}=  Get Matching Locator Count  ${REMOVE_CART_LOCATOR}
   Should Be Equal  '${t_count}'  '4'
+
+User Should Successfully Uploaded Video Via Video Editor
+  Wait Until Keyword Succeeds  120 s  30 s
+  ...  Element Should Not Be Visible  ${EDITOR_VIDEO_SUB_VIDEO}
+  ${t_currentCount}=  Evaluate  ${s_VIDEO_COUNT}+1
+  ${t_videoCount}=  Get Matching Locator Count  ${UPLOADED_VIDEO_CANVAS}
+  Should Be True  '${t_currentCount}'=='${t_videoCount}'

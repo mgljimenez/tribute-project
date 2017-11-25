@@ -94,6 +94,8 @@ ${REMOVE_CART_LOCATOR}  css=.remove-from-cart
 
 #--- SETTING FORM ---#
 ${MANAGE_TRIBUTE_HERO}  jquery=.tribute-hero
+${MANAGE_HERO_REMINDER_LINK}  ${MANAGE_TRIBUTE_HERO} a:eq(0)
+${MANAGE_HERO_VIDEOS_LINK}  ${MANAGE_TRIBUTE_HERO} a:eq(1)
 ${MANAGE_SEND_FACEBOOK_MESSAGE_BTN}  jquery=.middle-stripe a:eq(0)
 ${MANAGE_COPY_LINK_BTN}  jquery=.middle-stripe a:eq(1)
 ${MANAGE_SETTING_FORM}  css=section#manage-info
@@ -154,3 +156,19 @@ ${SEND_REMINDERS_BUTTON}  jquery=button#send-reminders-send-button
 ${SEND_REMINDER_MODAL}  jquery=.showSweetAlert
 ${SEND_REMINDER_YES_BTN}  ${SEND_REMINDER_MODAL} .confirm
 ${SEND_REMINDER_SUCCESS}  ${SEND_REMINDER_MODAL} .sa-success
+
+#--- MANAGE EDIT ---#
+${MANAGE_EDIT_CONTAINER}  jquery=section#manage-edit
+${EDITOR_CONTAINER}  jquery=#editor_container
+${EDITOR_MENU}  ${EDITOR_CONTAINER} .menu
+${EDITOR_PREVIEW}  ${EDITOR_MENU} button:eq(0)
+${EDITOR_ADD_MEDIA}  ${EDITOR_MENU} button:eq(1)
+${EDITOR_ADD_MUSIC}  ${EDITOR_MENU} button:eq(2)
+${EDITOR_VIDEO_OPTIONS}  ${EDITOR_MENU} button:eq(3)
+${EDITOR_HELP}  ${EDITOR_MENU} button:eq(4)
+${EDITOR_CHECKOUT}  ${EDITOR_MENU} button:eq(5)
+${UPLOADED_VIDEO_CANVAS}  jquery=.video-tile
+#- video editor sub menu -#
+${EDITOR_VIDEO_SUB_VIDEO}  jquery=.upload button:eq(0)
+${EDITOR_UPLOAD_CONTAINER}  jquery=[data-selector="chooser-primary-button"]
+${EDITOR_UPLOAD_BUTTON}  jquery=input[data-selector="file-input-opt1"]
