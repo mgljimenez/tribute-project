@@ -108,11 +108,13 @@ User Sends Reminder From Personal Email
   Click Element  ${SEND_REMINDERS_BUTTON}
 
 User Views Video On Invitation Page
+  Set Selenium Speed  0.5 s
   Wait And Click Element  ${MANAGE_INVITATIONS_BUTTON}
   Wait And Click Element  ${EMAIL_ICON_INVITATION}
   Wait Until Element Should Be Visible
   ...  ${LIST_OF_SUCCESSFUL_INVITE}
   Click Element  ${VIDEO_LINK}
+  Set Selenium Speed  0 s
 
 User Views Video On Send Reminder Page
   Wait And Click Element  ${MANAGE_SEND_REMINDER_BUTTON}
