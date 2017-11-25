@@ -114,6 +114,10 @@ User Views Video On Invitation Page
   ...  ${LIST_OF_SUCCESSFUL_INVITE}
   Click Element  ${VIDEO_LINK}
 
+User Views Video On Send Reminder Page
+  Wait And Click Element  ${MANAGE_SEND_REMINDER_BUTTON}
+  Wait AndClick Element  ${SEND_REMINDER_VIDEO_LINK}
+
 #--- Then ---#
 Send Reminder Success Modal Should Be Visible
   Wait Until Element Should Be Visible
