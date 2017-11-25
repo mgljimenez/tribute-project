@@ -9,6 +9,6 @@ Resource  ../../resources/common/global_setup.robot
 Resource  ../../resources/keywords/test_for_render_jobs_page.robot
 
 *** Test Cases ***
-User Has Successfully Viewed Start Page
+User Has Successfully Viewed Completed Tribute Page
   Given User Is In "TEST302" Page
   Then "COMPLETED_TRIBUTE" Element List Should Be Visible

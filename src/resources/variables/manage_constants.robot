@@ -29,9 +29,12 @@ ${MANUAL_EMAIL_FIELD}  css=input#email-input
 ${MAUNL_INVITE_ADD_BUTTON}  ${MANUAL_INVITE_FORM} button.btn-default
 ${SEND_INVITATION_BUTTON}  css=button.btn-primary
 ${INVITED_EMAIL}  css=.invited-users-email
-${LIST_OF_SUCCESSFUL_INVITE}  css=.invited-users-row
+${LIST_OF_SUCCESSFUL_INVITE}  jquery=.invited-users-row
+${VIDEO_LINK}  ${LIST_OF_SUCCESSFUL_INVITE} a[href*="videos"]
 #- reminder sent form -#
 ${REMINDER_SENT_TABLE}  css=table#reminders-sent
+#- video modal -#
+${VIDEO_MODAL}  jquery=#videos-modal .modal-content
 #--- cloudsponge-widget ---#
 ${CLOUD_SPONGE_WIDGET}  jquery=.cloudsponge-widget
 ${GENERATE_CSV_WIDGET_BTN}  ${CLOUD_SPONGE_WIDGET} li[data-launcher="csv"]
@@ -94,6 +97,7 @@ ${MANAGE_TRIBUTE_HERO}  jquery=.tribute-hero
 ${MANAGE_SEND_FACEBOOK_MESSAGE_BTN}  jquery=.middle-stripe a:eq(0)
 ${MANAGE_COPY_LINK_BTN}  jquery=.middle-stripe a:eq(1)
 ${MANAGE_SETTING_FORM}  css=section#manage-info
+${MANAGE_INVITATIONS_BUTTON}  jquery=section#manage-index a:eq(1) div
 ${MANAGE_SEND_REMINDER_BUTTON}  jquery=section#manage-index a:eq(2) div
 ${MANAGE_RECORD_UPLOAD_VIDEOS_BUTTON}  jquery=section#manage-index a:eq(3) div
 ${MANAGE_SETTING_BUTTON}  jquery=section#manage-index a:eq(4) div
